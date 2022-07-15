@@ -34,7 +34,7 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	for (i = 0; str[i]; i++)
 		content[i] = str[i];
-		new = malloc(sizeof(list_t));
+	new = malloc(sizeof(list_t));
 	if (new == NULL)
 	{
 		free(content);
