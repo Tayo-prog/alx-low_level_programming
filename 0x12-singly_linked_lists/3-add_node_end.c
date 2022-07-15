@@ -12,7 +12,7 @@ int _strlen(const char *s)
 	int i;
 
 	for (i = 0; s[i]; i++)
-						;
+		;
 	return (i);
 }
 /**
@@ -31,7 +31,7 @@ void *_strdup(const char *src)
 		return (NULL);
 	for (i = 0; src[i]; i++)
 		dest[i] = src[i];
-		dest[i] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
 /**
@@ -63,7 +63,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	current = *head;
 	while (current->next != NULL)
-		current = current->next;
+			current = current->next;
 		current->next = new;
 	return (*head);
 }
